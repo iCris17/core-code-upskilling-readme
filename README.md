@@ -10,7 +10,7 @@ function wordWithQuestionMark(word){
 ```javascript
 function oddOrEven(arrayNumbers){
     if (arrayNumbers.length == 0) return "Even";
-    return Number.isInteger(arrayNumbers.reduce( (a,b) => { return a + b;} ) / 2 ) ? "Even" : "Odd";
+    return arrayNumbers.reduce( (a,b) => { return a + b;} ) % 2 == 0 ? "Even" : "Odd";
 }
 ```
 

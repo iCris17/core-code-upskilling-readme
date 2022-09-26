@@ -27,3 +27,63 @@ function smallestIntegerInArray(arrayNumbers){
     return Math.min.apply(Math, arrayNumbers);
 }
 ```
+
+### Is Palindrome, week 2:
+```javascript
+function isPalindrome(line){
+    let word = String(line);
+    let auxWord = "";
+    for (let i = word.length-1; i >= 0; i-- ){
+        auxWord += word[i];
+    }
+    return word === auxWord ? true : false;
+}
+```
+
+### Well of ideas, week 2:
+```javascript
+function isPalindrome(line){
+    let word = String(line);
+    let auxWord = "";
+    for (let i = word.length-1; i >= 0; i-- ){
+        auxWord += word[i];
+    }
+    return word === auxWord ? true : false;
+}
+```
+
+### React manage events, week 2:
+```react
+import React from 'react';
+
+export class Counter extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {counter: 0}
+  }
+  
+  incrementCounter = () => {
+    this.setState([{counter: this.state.counter++}])
+  }
+  
+  decrementCounter = () => {
+    this.setState([{counter: this.state.counter--}])
+  }
+  
+  // Your event handlers 
+  render() {
+    return (
+      <div>
+        <h1>{this.state.counter}</h1>
+          <button id="increment" type="button" onClick={this.incrementCounter}>
+            Decrement
+          </button>
+          <button id="decrement" type="button" onClick={this.decrementCounter}>
+            Increment
+          </button>
+          <a id="counter">{this.state.counter}</a>
+      </div>
+    )
+  }
+}
+```

@@ -53,7 +53,7 @@ function isPalindrome(line){
 ```
 
 ### React manage events, week 2:
-```react
+```javascript
 import React from 'react';
 
 export class Counter extends React.Component {
